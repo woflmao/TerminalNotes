@@ -13,6 +13,7 @@ titleScreen = '''
  | . ` |/ _ \| __/ _ \/ __| |
  | |\  | (_) | ||  __/\__ \_|
  |_| \_|\___/ \__\___||___(_)
+ - by woflmao
  =============================
  (n) to add a new entry
  (s) to search for an entry
