@@ -18,7 +18,7 @@ made with python3 so you might have to use pip3 install instead
 use [pyinstaller](https://pyinstaller.org/en/stable/installation.html)
 
 ```
-pyinstaller --onefile --icon=icon.ico TerminalNotes.py
+pyinstaller --onefile --icon=TerminalNotes.ico TerminalNotes.py
 ```
 
 Check the 'dist' folder, and you will se 
