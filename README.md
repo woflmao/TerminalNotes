@@ -6,12 +6,7 @@ Inspired by [tnote](https://github.com/tasdikrahman/tnote/tree/master), I just f
 
 # Dependencies
 
-``` 
-$ git clone https://github.com/woflmao/TerminalNotes.git
-$ cd TerminalNotes && pip install -r requirements.txt
-```
 
-made with python3 so you might have to use pip3 install instead
 
 # Running the app
 If you downloaded from the releases page, I would suggest putting the .exe in it's own folder, as the db.json will just be created in whatever root folder the .exe is in.
@@ -22,11 +17,21 @@ click the exe!
 
 If you want to build it yourself, follow these steps:
 
-1. pip install pip install pyinstaller
 
-2.
+made with python3 so you might have to use pip3 install instead
+1. Clone the repo
+  ``` 
+$ git clone https://github.com/woflmao/TerminalNotes.git
+$ cd TerminalNotes && pip install -r requirements.txt
 ```
-pyinstaller --onefile --icon=TerminalNotes.ico TerminalNotes.py
+2. Install pyinstaller
+  ```
+  pip install pyinstaller
+  ```
+
+3. In the root folder
+```
+$ pyinstaller --onefile --icon=TerminalNotes.ico TerminalNotes.py
 ```
 
 *NOTE: I don't know why, but chances are if you build the .exe, in the dist folder you will see NOT the icon you added in the step above, you can copy to another directory which will solve this.
