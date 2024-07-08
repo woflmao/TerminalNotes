@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from tinydb import TinyDB, Query
 import datetime
 from os import system, name
@@ -55,15 +56,15 @@ while choice != 'q':
     if searchChoice == 't':
       clear()
       res = db.search(Query().title == input('Please enter the title:'))
-      print(res[0]['date'] + ' - ' + res[0]['title'] + '\n' + res[0]['entry'])
+      print(str(res[0]['id']) + ' - ' + res[0]['date'] + ' - ' + res[0]['title'] + '\n' + res[0]['entry'])
     elif searchChoice == 'd':
       clear()
       res = db.search(Query().date == input('Please enter the date:'))
-      print(res[0]['date'] + ' - ' + res[0]['title'] + '\n' + res[0]['entry'])
+      print(str(res[0]['id']) + ' - ' +res[0]['date'] + ' - ' + res[0]['title'] + '\n' + res[0]['entry'])
     elif searchChoice == 'l':
       clear()
       for item in db:
-        print(item['date'] + ' - ' + item['title'] + '\n' + item['entry'])
+        print(str(item['id']) + ' - ' + item['date'] + ' - ' + item['title'] + '\n' + item['entry'])
     
   elif choice == 'd':
     clear()
