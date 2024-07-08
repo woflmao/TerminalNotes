@@ -22,14 +22,12 @@ made with python3 so you might have to use pip3 install instead
 1. Clone the repo
   ``` 
 $ git clone https://github.com/woflmao/TerminalNotes.git
-$ cd TerminalNotes && pip install -r requirements.txt
 ```
-2. Install pyinstaller
-  ```
-  pip install pyinstaller
-  ```
-
-3. In the root folder
+2. Navigate to directory and Install dependencies
+```
+$ cd TerminalNotes && pip install -r requirements.txt && pip install pyinstaller
+```
+2. In the root folder, run
 ```
 $ pyinstaller --onefile --icon=TerminalNotes.ico TerminalNotes.py
 ```
