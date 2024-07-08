@@ -15,16 +15,17 @@ made with python3 so you might have to use pip3 install instead
 
 # Running the app
 
-Add a symbolic link
+use [pyinstaller](https://pyinstaller.org/en/stable/installation.html)
 
 ```
-$ chmod +x TerminalNotes
-$ cd ~/bin/
-$ ln -s ~/some/path/to/TerminalNotes
+pyinstaller --onefile TerminalNotes.py
 ```
-Replace ``` ~/some/path/to/TerminalNotes ``` with the path where you cloned the repo.
 
-Don't know how to do this on windows
+Check the 'dist' folder, and you will se 
+
+# Requirements
+
+TinyDB@4.8.0
 
 
 # Licence
